@@ -1,0 +1,52 @@
+@-webkit-keyframes appearElement {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  70% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes appearElement {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  70% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes closeElement {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  30% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+}
+@keyframes closeElement {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  30% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+}/*# sourceMappingURL=KeyFrames.css.map */

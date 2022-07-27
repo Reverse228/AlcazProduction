@@ -1,0 +1,43 @@
+@import ../../../../Style/MainStyle/MainStyle
+@import ../../../../Style/MainStyle/KeyFrames
+
+$languaceContainerWidth: 150px
+
+#languaceBtn
+    width: $languaceContainerWidth
+    @include flex(flex-end, center, row)
+
+    #btnVisible
+        width: 45px
+        height: 45px
+        border-radius: 100px
+        background: $darkGray
+        transition: 0.3s
+        @include flex(flex-end, center, row)
+
+        #languaces
+            font-family: $josefinSans
+            color: white
+            width: 50px
+            margin-right: 45px
+            transition: 0.3s
+            @include flex(space-between, center, row)
+
+            p
+                cursor: pointer
+                transition: 0.2s
+                font-size: 16px
+                animation: appearElement 0.3s 
+                animation-iteration-count: 1
+                animation-timing-function: ease-out
+
+            .close
+                animation: closeElement 0.2s 
+                animation-iteration-count: 1
+                animation-timing-function: ease-in
+                
+
+        svg
+            transform: translate(-12px, 1px)
+            
+        

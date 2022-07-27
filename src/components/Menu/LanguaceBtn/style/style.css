@@ -1,0 +1,103 @@
+@-webkit-keyframes appearElement {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  70% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes appearElement {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  70% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes closeElement {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  30% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+}
+@keyframes closeElement {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  30% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+}
+#languaceBtn {
+  width: 150px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+#languaceBtn #btnVisible {
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  background: #161616;
+  transition: 0.3s;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+#languaceBtn #btnVisible #languaces {
+  font-family: "Josefin Sans";
+  color: white;
+  width: 50px;
+  margin-right: 45px;
+  transition: 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#languaceBtn #btnVisible #languaces p {
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 16px;
+  -webkit-animation: appearElement 0.3s;
+          animation: appearElement 0.3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+#languaceBtn #btnVisible #languaces .close {
+  -webkit-animation: closeElement 0.2s;
+          animation: closeElement 0.2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+#languaceBtn #btnVisible svg {
+  transform: translate(-12px, 1px);
+}/*# sourceMappingURL=style.css.map */

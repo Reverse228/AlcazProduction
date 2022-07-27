@@ -1,0 +1,26 @@
+#menu {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#menu #menuContent {
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#menu #btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#menu #btns .menuBtn:nth-child(2) {
+  margin: 0 10px 0 20px;
+}
+#menu #btns .menuBtn:nth-child(3) {
+  margin: 0 20px 0 10px;
+}/*# sourceMappingURL=style.css.map */

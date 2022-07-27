@@ -1,0 +1,38 @@
+.menuBtn {
+  width: 150px;
+  color: white;
+  font-family: "Josefin Sans";
+  font-size: 13px;
+  font-weight: bold;
+  background: transparent;
+  border-radius: 100px;
+  padding: 13px 0;
+  cursor: pointer;
+  transition: 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.menuBtn * {
+  margin: 0 25px;
+}
+.menuBtn:hover {
+  background: #161616;
+}
+.menuBtn p {
+  margin-right: 0;
+  transform: translateY(1px);
+}
+.menuBtn svg {
+  margin-left: 0;
+}
+
+.ac {
+  width: 175px;
+  background: #161616;
+}
+.ac svg path {
+  transition: 0.2s;
+  fill: #3C9FDD;
+}/*# sourceMappingURL=style.css.map */

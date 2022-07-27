@@ -1,0 +1,39 @@
+@import ../../../../Style/MainStyle/MainStyle
+
+.menuBtn
+    width: 150px
+    color: white
+    font-family: $josefinSans
+    font-size: 13px
+    font-weight: bold
+    background: transparent
+    border-radius: 100px
+    padding: 13px 0
+    cursor: pointer
+    transition: 0.2s
+    @include flex(space-between, center, row)
+
+    & *
+        margin: 0 25px
+
+    &:hover
+        background: $darkGray
+
+    p
+        margin-right: 0
+        transform: translateY(1px)
+
+    svg
+        margin-left: 0
+    
+    
+.ac
+    width: 175px
+    background: $darkGray
+
+    svg
+        path
+            transition: 0.2s
+            fill: $blue
+
+    
