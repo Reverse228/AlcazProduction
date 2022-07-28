@@ -8,7 +8,6 @@
         transform: translateY(0px)
         opacity: 1
 
-
 @keyframes closeElement
     0%
         transform: translateY(0px)
@@ -18,3 +17,38 @@
     100%
         transform: translateY(10px)
         opacity: 0
+
+
+@keyframes appearBigText
+    0%
+        transform: rotate(-2deg) translate(-30px, 50px)
+        filter: blur(100px)
+        opacity: 0
+    100%
+        transform: rotate(0deg) translate(0px, 0px) 
+        filter: blur(0rem)
+        opacity: 1
+
+@keyframes appearSimpleText
+    0%
+        opacity: 0
+        filter: blur(100px)
+        transform: translate(0, -150px)
+
+    100%
+        opacity: 1
+        filter: blur(0px)
+        transform: translate(0, -20%)
+
+@keyframes appearName 
+
+    0%
+        opacity: 0
+        filter: blur(50px)
+        font-size: 10px
+    
+    100%
+        opacity: 1
+        filter: blur(0px)
+        font-size: 25px
+       

@@ -1,0 +1,17 @@
+.bigText {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.bigText p {
+  font-weight: 800;
+  transform: translateY(60%);
+}
+.bigText h2 {
+  font-weight: 900;
+}
+.bigText h2, .bigText p {
+  margin: 0;
+  font-family: "Montserrat";
+}/*# sourceMappingURL=style.css.map */
