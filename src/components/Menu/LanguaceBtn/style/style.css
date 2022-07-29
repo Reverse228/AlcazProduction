@@ -50,6 +50,98 @@
     opacity: 0;
   }
 }
+@-webkit-keyframes appearBigText {
+  0% {
+    transform: rotate(-2deg) translate(-30px, 50px);
+    filter: blur(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg) translate(0px, 0px);
+    filter: blur(0rem);
+    opacity: 1;
+  }
+}
+@keyframes appearBigText {
+  0% {
+    transform: rotate(-2deg) translate(-30px, 50px);
+    filter: blur(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg) translate(0px, 0px);
+    filter: blur(0rem);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes appearSimpleText {
+  0% {
+    opacity: 0;
+    filter: blur(100px);
+    transform: translate(0, -150px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translate(0, -20%);
+  }
+}
+@keyframes appearSimpleText {
+  0% {
+    opacity: 0;
+    filter: blur(100px);
+    transform: translate(0, -150px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translate(0, -20%);
+  }
+}
+@-webkit-keyframes appearName {
+  0% {
+    opacity: 0;
+    filter: blur(50px);
+    font-size: 10px;
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    font-size: 25px;
+  }
+}
+@keyframes appearName {
+  0% {
+    opacity: 0;
+    filter: blur(50px);
+    font-size: 10px;
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    font-size: 25px;
+  }
+}
+@-webkit-keyframes appearVideo {
+  0% {
+    opacity: 0;
+    filter: blur(100px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+@keyframes appearVideo {
+  0% {
+    opacity: 0;
+    filter: blur(100px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
 #languaceBtn {
   width: 150px;
   display: flex;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from "../../images/logo.png";
+import logo from "../../environment/images/logo.png";
 import MenuBtn from './Btn/MenuBtn';
 import LanguaceBtn from './LanguaceBtn/LanguaceBtn';
 import { menuBtns } from './Config';

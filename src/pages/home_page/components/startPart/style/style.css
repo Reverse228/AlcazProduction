@@ -122,30 +122,74 @@
     font-size: 25px;
   }
 }
+@-webkit-keyframes appearVideo {
+  0% {
+    opacity: 0;
+    filter: blur(100px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+@keyframes appearVideo {
+  0% {
+    opacity: 0;
+    filter: blur(100px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+@-webkit-keyframes appearParticles {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(2px);
+  }
+}
+@keyframes appearParticles {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(2px);
+  }
+}
 #startPart {
   width: 100%;
   height: 1000px;
 }
-#startPart #animationTextContainer {
+#startPart #content {
+  width: 100%;
+}
+#startPart #content #animationTextContainer {
   position: absolute;
   width: 50vw;
   height: 50vh;
   transform: translate(50%, 25%);
   transition: 0.7s;
-  nimation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: none;
 }
-#startPart #animationTextContainer #startText {
+#startPart #content #animationTextContainer #startText {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 }
-#startPart #animationTextContainer #startText p {
+#startPart #content #animationTextContainer #startText p {
   font-size: 54px;
   font-weight: 800;
   transform: translateY(-20%);
@@ -156,7 +200,7 @@
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
-#startPart #animationTextContainer #startText #bigTextContainer {
+#startPart #content #animationTextContainer #startText #bigTextContainer {
   position: absolute;
   transform: translateY(50px);
   display: flex;
@@ -164,7 +208,7 @@
   align-items: center;
   flex-direction: row;
 }
-#startPart #animationTextContainer #startText #bigTextContainer h2 {
+#startPart #content #animationTextContainer #startText #bigTextContainer h2 {
   font-size: 120px;
   font-weight: 900;
   -webkit-animation: appearBigText;
@@ -174,8 +218,46 @@
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
-#startPart #animationTextContainer #startText h2, #startPart #animationTextContainer #startText p {
+#startPart #content #animationTextContainer #startText h2, #startPart #content #animationTextContainer #startText p {
   margin: 0;
   color: #3C9FDD;
   font-family: "Montserrat";
+}
+#startPart #content #videoContainer {
+  position: absolute;
+  width: 50vw;
+  height: 50vh;
+  transform: translate(100%, 35%);
+  transition: 1s;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: none;
+}
+#startPart #content #videoContainer #video {
+  width: 100%;
+  height: 300px;
+  -webkit-animation: appearVideo;
+          animation: appearVideo;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+#startPart #tsparticles {
+  top: 60vh;
+  position: absolute;
+  z-index: -100;
+  width: 100%;
+  height: 350px;
+  filter: blur(2px);
+  -webkit-animation: appearParticles;
+          animation: appearParticles;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }/*# sourceMappingURL=style.css.map */

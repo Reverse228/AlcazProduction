@@ -1,7 +1,8 @@
-import ContactIco from '../../svg/ContactIco';
-import GalleryIco from '../../svg/GalleryIco';
-import HomeIco from '../../svg/HomeIco';
-import ServiceIco from '../../svg/ServiceIco';
+import ContactIco from "../../environment/svg/ContactIco";
+import GalleryIco from "../../environment/svg/GalleryIco";
+import HomeIco from "../../environment/svg/HomeIco";
+import ServiceIco from "../../environment/svg/ServiceIco";
+
 
 
 export const menuBtns = [

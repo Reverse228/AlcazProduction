@@ -5,43 +5,71 @@
     width: 100%
     height: 1000px
 
-    #animationTextContainer
-        position: absolute
-        width: 50vw
-        height: 50vh
-        transform: translate(50%, 25%)
-        transition: 0.7s
-        nimation-timing-function: ease
-        @include flex(center, center, none)
-
-
-        #startText
+    #content
+        width: 100%
+        
+        #animationTextContainer
             position: absolute
-            @include flex(center, flex-start, column)
+            width: 50vw
+            height: 50vh
+            transform: translate(50%, 25%)
+            transition: 0.7s
+            animation-timing-function: ease
+            @include flex(center, center, none)
 
-            p
-                font-size: 54px
-                font-weight: 800
-                transform: translateY(-20%)
-                animation: appearSimpleText
-                animation-duration: 1.5s
-                animation-iteration-count: 1
-
-            #bigTextContainer
+            #startText
                 position: absolute
-                transform: translateY(50px)
-                @include flex(center, center, row)
+                @include flex(center, flex-start, column)
 
-                h2
-                    font-size: 120px
-                    font-weight: 900
-                    animation: appearBigText
-                    animation-duration: 1s
+                p
+                    font-size: 54px
+                    font-weight: 800
+                    transform: translateY(-20%)
+                    animation: appearSimpleText
+                    animation-duration: 1.5s
                     animation-iteration-count: 1
 
-            
-            h2, p 
-                margin: 0 
-                color: $blue 
-                font-family: $montserrat
-            
+                #bigTextContainer
+                    position: absolute
+                    transform: translateY(50px)
+                    @include flex(center, center, row)
+
+                    h2
+                        font-size: 120px
+                        font-weight: 900
+                        animation: appearBigText
+                        animation-duration: 1s
+                        animation-iteration-count: 1
+
+                h2, p 
+                    margin: 0 
+                    color: $blue 
+                    font-family: $montserrat
+
+        #videoContainer
+            position: absolute
+            width: 50vw
+            height: 50vh
+            transform: translate(100%, 35%)  
+            transition: 1s
+            z-index: 10
+            @include flex(center, center, none)      
+
+            #video   
+                width: 100%
+                height: 300px 
+                animation: appearVideo
+                animation-duration: 0.7s
+                animation-iteration-count: 1
+                animation-timing-function: ease
+
+    #tsparticles
+        top: 60vh
+        position: absolute
+        z-index: -100
+        width: 100%
+        height: 350px
+        filter: blur(2px)
+        animation: appearParticles
+        animation-duration: 5s
+        animation-iteration-count: 1

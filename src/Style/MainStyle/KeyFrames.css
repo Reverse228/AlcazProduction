@@ -121,4 +121,44 @@
     filter: blur(0px);
     font-size: 25px;
   }
+}
+@-webkit-keyframes appearVideo {
+  0% {
+    opacity: 0;
+    filter: blur(100px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+@keyframes appearVideo {
+  0% {
+    opacity: 0;
+    filter: blur(100px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+@-webkit-keyframes appearParticles {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(2px);
+  }
+}
+@keyframes appearParticles {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(2px);
+  }
 }/*# sourceMappingURL=KeyFrames.css.map */

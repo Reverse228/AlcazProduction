@@ -1,6 +1,6 @@
 import * as React from 'react';
 import i18n from '../../../i18n';
-import LanguaceIco from "../../../svg/LanguaceIco"
+import LanguaceIco from "../../../environment/svg/LanguaceIco"
 import "./style/style.css"
 
 const LanguaceBtn = () => {
