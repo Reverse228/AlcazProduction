@@ -4,5 +4,12 @@
         "services": "Servicii",
         "gallery": "Galereie",
         "contacts": "Contacte"
+    },
+
+    "homePage" : {
+        "about" : {
+            "slogo" : "Fiecare rezultat este o istorie ce ramane mereu la un nivel inalt",
+            "desc" : "Compania Alcaz Production isi desfasoare activitate in Republica Moldova deja de 2 ani, ......... suntem aici fiindca ai nevoie de servicii creative si calitative. La Alcaz Production primesti echilibrul dintre pret, calitate, si punctualitate a serviciilor de Graphic design, Motion Design si Foto&Video"
+        }
     }
 }

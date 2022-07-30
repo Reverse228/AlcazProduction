@@ -1,0 +1,35 @@
+#aboutPart {
+  color: white;
+  width: 70%;
+  height: 400px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+#aboutPart #name #companyName {
+  color: #8D8D8D;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  display: inline;
+  margin: 0 10px 0 0;
+}
+#aboutPart #name svg {
+  transform: translateY(10%);
+}
+#aboutPart #name svg path {
+  fill: #8D8D8D;
+}
+#aboutPart h3 {
+  margin: 20px 0 25px 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 28px;
+  font-weight: bolder;
+}
+#aboutPart #description {
+  margin: 0;
+  font-family: "Montserrat";
+  color: #005F97;
+  font-size: 14px;
+  font-style: italic;
+}/*# sourceMappingURL=style.css.map */

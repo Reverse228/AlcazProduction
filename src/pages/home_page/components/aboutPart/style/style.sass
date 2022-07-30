@@ -1,0 +1,34 @@
+@import ../../../../../Style/MainStyle/MainStyle
+    
+#aboutPart
+    color: white
+    width: $textWidth
+    height: 400px
+    @include flex(flex-start, flex-start, column)
+    
+    #name
+        #companyName
+            color: $gray
+            font-family: $josefinSans
+            font-size: 18px
+            display: inline
+            margin: 0 10px 0 0
+
+        svg
+            transform: translateY(10%)
+
+            path
+                fill: $gray
+    
+    h3
+        margin: 20px 0 25px 0
+        font-family: $josefinSans
+        font-size: 28px
+        font-weight: bolder
+
+    #description
+        margin: 0
+        font-family: $montserrat
+        color: $darkBlue
+        font-size: 14px
+        font-style: italic

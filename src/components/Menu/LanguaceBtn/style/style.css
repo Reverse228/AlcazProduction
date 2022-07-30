@@ -142,6 +142,26 @@
     filter: blur(0px);
   }
 }
+@-webkit-keyframes appearParticles {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(2px);
+  }
+}
+@keyframes appearParticles {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(2px);
+  }
+}
 #languaceBtn {
   width: 150px;
   display: flex;
