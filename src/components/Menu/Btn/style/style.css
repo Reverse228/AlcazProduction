@@ -1,7 +1,7 @@
 .menuBtn {
   width: 150px;
   color: white;
-  font-family: "Josefin Sans";
+  font-family: "Josefin Sans", sans-serif;
   font-size: 13px;
   font-weight: bold;
   background: transparent;

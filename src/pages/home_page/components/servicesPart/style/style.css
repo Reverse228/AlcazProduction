@@ -1,0 +1,23 @@
+#servicesPart {
+  width: 100%;
+}
+#servicesPart #services {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: none;
+}
+#servicesPart #services img {
+  width: 100%;
+  height: auto;
+}
+#servicesPart #services #servicesCards {
+  position: absolute;
+  z-index: 10;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: none;
+}/*# sourceMappingURL=style.css.map */

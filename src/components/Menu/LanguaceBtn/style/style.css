@@ -181,7 +181,7 @@
   flex-direction: row;
 }
 #languaceBtn #btnVisible #languaces {
-  font-family: "Josefin Sans";
+  font-family: "Josefin Sans", sans-serif;
   color: white;
   width: 50px;
   margin-right: 45px;

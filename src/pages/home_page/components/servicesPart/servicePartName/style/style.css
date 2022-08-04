@@ -1,0 +1,11 @@
+#servicePartName {
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+  transform: translateY(75px);
+}
+#servicePartName svg {
+  transform: translate(-50px, -15px);
+}/*# sourceMappingURL=style.css.map */

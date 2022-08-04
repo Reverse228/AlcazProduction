@@ -10,6 +10,21 @@
         "about" : {
             "slogo" : "Fiecare rezultat este o istorie ce ramane mereu la un nivel inalt",
             "desc" : "Compania Alcaz Production isi desfasoare activitate in Republica Moldova deja de 2 ani, ......... suntem aici fiindca ai nevoie de servicii creative si calitative. La Alcaz Production primesti echilibrul dintre pret, calitate, si punctualitate a serviciilor de Graphic design, Motion Design si Foto&Video"
+        },
+        "whatWeCan" : {
+            "photo": {
+                "name" : "Fotosesii",
+                "desc" : "Ne-am invatat sa oprim timpul, pentru a prinde cele mai importante si emotionante momente a vietii"
+            },
+            "video" : {
+                "name" : "Video",
+                "desc" : "Nu are importanta cat e de greu proiectul, ii dam viata sa poata crea emotii"
+            },
+            "motionDesign" : {
+                "name" : "Motion design",
+                "desc": "Grafica este prea importanta sa nu fie folosita. Impresionati cu ajutorul ei"
+            },
+            "btnText": "Afla mai mult"
         }
     }
 }

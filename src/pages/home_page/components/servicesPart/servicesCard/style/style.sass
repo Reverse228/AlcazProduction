@@ -1,0 +1,80 @@
+@import ../../../../../../Style/MainStyle/MainStyle
+
+.servicesCard
+    width: 30%
+    height: 60%
+    transform: translateY(30px)
+    @include flex(center, center, column)
+
+    .nameContainer
+        color: white
+        font-family: $josefinSans
+        @include flex(center, center, row)
+
+        h3
+            font-size: 25px
+            margin-right: 20px
+        
+        svg
+            height: 25px
+            width: auto
+        
+    &:nth-child(2)  
+        .nameContainer
+            svg
+                transform: translateY(-3px)
+            
+    .descContainer
+        background: linear-gradient(148.81deg, rgba(1, 26, 41, 0.75) 30.21%, rgba(0, 79, 126, 0.75) 100%)
+        border-radius: 30px
+        height: 100%
+        padding: 25px 30px
+        @include flex(space-between, center, column)
+
+        p
+            text-align: left
+            font-family: $montserrat
+            color: $lightBlue
+            font-size: 14px
+
+        .btns
+            width: 60%
+            background: $blue
+            border-radius: 100px
+            padding: 10px 20px
+            font-family: $josefinSans
+            cursor: pointer
+            font-size: 12px
+            color: white
+            @include flex(space-between, center, row)
+        
+            p
+                margin: 0
+
+            .arrows
+                transition: 0.2s
+                @include flex(center, center, row)
+                transform: translateX(10px)
+
+                .arrowSvg
+                    transition: 0.2s
+                    @include flex(center, center, none)
+                    
+                    &:last-child
+                        transform: translateX(-11px)
+
+                    svg
+                        width: 10px
+                        height: auto
+
+            .acBtn
+                transform: translateX(5px)
+            
+                .acComplex
+                    transform: translateX(-3px) !important
+                    
+
+                
+                
+            
+    

@@ -6,9 +6,11 @@ type Props = {
     bigText: string
     bigTextSize?: number
     color?: string
+    proportion: number
+    translateY: number
 }
 
-const BigText:React.FC<Props> = ({text, bigText, bigTextSize, color}) => {
+const BigText:React.FC<Props> = ({text, bigText, bigTextSize, color, proportion, translateY}) => {
     const [textWidth, setTextWidth] = React.useState(0)
     const [textFontSize, setTextFontSize] = React.useState(0)
 
@@ -16,11 +18,11 @@ const BigText:React.FC<Props> = ({text, bigText, bigTextSize, color}) => {
 
     React.useEffect(() => {
         setTextWidth(bigTextPerops.current?.offsetWidth !== undefined ? bigTextPerops.current?.offsetWidth : 0);
-        setTextFontSize(textWidth / 10.7)
+        setTextFontSize(textWidth / proportion)
     }, [bigTextPerops.current?.offsetWidth])
            
     return <div className='bigText' style={{color: color ? color : "#ffffff"}}>
-        <p style={{width: textWidth, fontSize: textFontSize}}>{text}</p>
+        <p style={{width: textWidth, fontSize: textFontSize, transform: `translateY(${translateY}%)`}}>{text}</p>
         <h2 style={{fontSize: bigTextSize ? bigTextSize : 30 }} ref={bigTextPerops}>{bigText}</h2>
     </div>
 }

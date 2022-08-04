@@ -1,0 +1,89 @@
+.servicesCard {
+  width: 30%;
+  height: 60%;
+  transform: translateY(30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.servicesCard .nameContainer {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.servicesCard .nameContainer h3 {
+  font-size: 25px;
+  margin-right: 20px;
+}
+.servicesCard .nameContainer svg {
+  height: 25px;
+  width: auto;
+}
+.servicesCard:nth-child(2) .nameContainer svg {
+  transform: translateY(-3px);
+}
+.servicesCard .descContainer {
+  background: linear-gradient(148.81deg, rgba(1, 26, 41, 0.75) 30.21%, rgba(0, 79, 126, 0.75) 100%);
+  border-radius: 30px;
+  height: 100%;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.servicesCard .descContainer p {
+  text-align: left;
+  font-family: "Montserrat";
+  color: #D2EEFF;
+  font-size: 14px;
+}
+.servicesCard .descContainer .btns {
+  width: 60%;
+  background: #3C9FDD;
+  border-radius: 100px;
+  padding: 10px 20px;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+  font-size: 12px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.servicesCard .descContainer .btns p {
+  margin: 0;
+}
+.servicesCard .descContainer .btns .arrows {
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  transform: translateX(10px);
+}
+.servicesCard .descContainer .btns .arrows .arrowSvg {
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: none;
+}
+.servicesCard .descContainer .btns .arrows .arrowSvg:last-child {
+  transform: translateX(-11px);
+}
+.servicesCard .descContainer .btns .arrows .arrowSvg svg {
+  width: 10px;
+  height: auto;
+}
+.servicesCard .descContainer .btns .acBtn {
+  transform: translateX(5px);
+}
+.servicesCard .descContainer .btns .acBtn .acComplex {
+  transform: translateX(-3px) !important;
+}/*# sourceMappingURL=style.css.map */
