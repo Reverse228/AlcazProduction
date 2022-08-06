@@ -6,7 +6,51 @@
   align-items: center;
   flex-direction: none;
 }
-#galleryPart #tsparticles {
+#galleryPart #galleryPartContent {
+  width: 75%;
+  height: 70%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: none;
+}
+#galleryPart #galleryPartContent #textContent {
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  z-index: 10;
+}
+#galleryPart #galleryPartContent #textContent #galleryPartBtn {
+  background: #3C9FDD;
+  border-radius: 100px;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  padding: 15px 20px;
+  width: 150px;
+  cursor: pointer;
+  transition: 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#galleryPart #galleryPartContent #textContent #galleryPartBtn p {
+  margin: 0;
+}
+#galleryPart #galleryPartContent #textContent #galleryPartBtn:hover {
+  width: 160px;
+  background: #46a7e3;
+}
+#galleryPart #galleryPartContent img {
+  position: absolute;
+  width: auto;
+  height: 70%;
+  filter: brightness(30%);
+}
+#galleryPart #tsparticlesGallery {
   position: absolute;
   width: 80%;
   height: 80%;

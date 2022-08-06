@@ -2,6 +2,9 @@ import * as React from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import "./style/style.css"
+import HomeGalleryBg from "../../../../environment/images/HomeGalleryBg.png"
+import BigText from '../../../../components/bigText/BigText';
+import GalleryIco from '../../../../environment/svg/GalleryIco';
 
 const GalleryPart = () => {
     const particlesInit = async (main: any) => {
@@ -9,7 +12,17 @@ const GalleryPart = () => {
     };
 
     return <div id='galleryPart'>
-        <Particles id="tsparticles"
+        <div id='galleryPartContent'>
+            <div id='textContent'>
+                <BigText text='Cu ce te putem impresiona' bigText='CHIAR ACUM' proportion={14.4} translateY={55} bigTextSize={120}/>
+                <div id='galleryPartBtn'>
+                    <p>Galerie</p>
+                    <GalleryIco/>
+                </div>
+            </div>
+            <img src={HomeGalleryBg} alt="" />
+        </div>
+        <Particles id="tsparticlesGallery"
             init={particlesInit}
             options={{
                 fullScreen: {
