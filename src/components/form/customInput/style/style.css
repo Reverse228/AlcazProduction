@@ -1,0 +1,33 @@
+.CustomInput {
+  background: #161616;
+  color: #8D8D8D;
+  border-radius: 100px;
+  padding: 0 15px;
+  transition: 0.1s;
+  width: 250px;
+  margin-top: 15px;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.CustomInput p {
+  margin: 0;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+}
+.CustomInput input {
+  height: 45px;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: white;
+  font-size: 14px;
+}
+
+.acInput {
+  border: 1px solid #8D8D8D;
+  color: #3C9FDD;
+}/*# sourceMappingURL=style.css.map */

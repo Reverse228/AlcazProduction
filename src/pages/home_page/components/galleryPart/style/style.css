@@ -38,6 +38,7 @@
   flex-direction: row;
 }
 #galleryPart #galleryPartContent #textContent #galleryPartBtn p {
+  font-size: 15px;
   margin: 0;
 }
 #galleryPart #galleryPartContent #textContent #galleryPartBtn:hover {

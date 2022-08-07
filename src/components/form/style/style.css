@@ -1,0 +1,69 @@
+.form {
+  width: 575px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form .chooseService {
+  width: 545px;
+  background: #161616;
+  height: 47px;
+  padding: 0 15px;
+  border-radius: 100px;
+  color: #8D8D8D;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.form .chooseService .formServices {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.form .chooseService .formServices .formService {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.form .chooseService .formServices .formService svg {
+  height: 26px;
+  width: auto;
+  margin-left: 10px;
+}
+.form .chooseService .formServices .formService svg path {
+  fill: #8D8D8D;
+}
+.form .chooseService .formServices .formService:nth-child(2) svg {
+  transform: translateY(-2px);
+}
+.form .userInfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.form .footerPart {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.form .footerPart .rightFooterPart {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}/*# sourceMappingURL=style.css.map */

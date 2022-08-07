@@ -1,0 +1,58 @@
+@import ../../../Style/MainStyle/MainStyle
+
+$height: 47px
+$padding: 0 15px
+
+$allWidth: 575px
+
+.form
+    width: $allWidth
+    color: white
+    @include flex(center, center, column)
+
+    .chooseService
+        width: $allWidth - 30
+        background: $darkGray
+        height: $height
+        padding: $padding
+        border-radius: 100px
+        color: $gray
+        font-family: $montserrat
+        font-weight: 500
+        font-size: 12px
+        @include flex(space-between, center, row)
+
+        .formServices
+            width: 75%
+            @include flex(space-between, center, row)
+
+            .formService
+                cursor: pointer
+                @include flex(center, center, row)
+
+                svg
+                    height: 26px
+                    width: auto
+                    margin-left: 10px
+
+                    path 
+                        fill: $gray
+
+                &:nth-child(2)
+                    svg
+                        transform: translateY(-2px)
+                    
+    
+    .userInfo
+        width: 100%
+        @include flex(space-between, center, row)       
+                
+    
+    .footerPart
+        width: 100%
+        @include flex(space-between, center, row)
+
+        .rightFooterPart
+            width: 250px
+            @include flex(center, center, column)
+

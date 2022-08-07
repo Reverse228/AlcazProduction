@@ -1,5 +1,6 @@
 import React from 'react'
 import AboutPart from './components/aboutPart/AboutPart';
+import FormPart from './components/formPart/FormPart';
 import GalleryPart from './components/galleryPart/GalleryPart';
 import ServicesPart from './components/servicesPart/ServicesPart';
 import StartPart from './components/startPart/StartPart';
@@ -11,6 +12,7 @@ const HomePage = () => {
         <AboutPart/>
         <ServicesPart/>
         <GalleryPart/>
+        <FormPart/>
     </div>
 }
 

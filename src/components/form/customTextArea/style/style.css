@@ -1,0 +1,26 @@
+.commentPart {
+  background: #161616;
+  color: #8D8D8D;
+  border-radius: 20px;
+  padding: 0 15px;
+  transition: 0.1s;
+  width: 250px;
+  margin-top: 15px;
+  border: 1px solid transparent;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+}
+.commentPart textarea {
+  border: none;
+  background: transparent;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  resize: none;
+}
+
+.acTextArea {
+  border: 1px solid #8D8D8D;
+  color: #3C9FDD;
+}/*# sourceMappingURL=style.css.map */

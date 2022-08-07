@@ -26,5 +26,21 @@
             },
             "btnText": "Afla mai mult"
         }
+    },
+
+    "form" : {
+        "services" : {
+            "choose": "Alege serviciul",
+            "photo": "Fotosesie",
+            "video": "Video",
+            "motionDesign": "Motion Design"
+        },
+        "name": "Nume",
+        "surname": "Prenumele",
+        "phone": "Telefonul",
+        "mail": "Posta",
+        "comment": "Comentariu",
+        "socialMedia": "Va vom contacta",
+        "btn": "Trimite" 
     }
 }
