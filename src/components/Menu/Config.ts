@@ -6,8 +6,8 @@ import ServiceIco from "../../environment/svg/ServiceIco";
 
 
 export const menuBtns = [
-    {name: "home", ico: HomeIco},
-    {name: "services", ico: ServiceIco},
-    {name: "gallery", ico: GalleryIco},
-    {name: "contacts", ico: ContactIco}
+    {name: "home", ico: HomeIco, link: "/"},
+    {name: "services", ico: ServiceIco, link: "/services"},
+    {name: "gallery", ico: GalleryIco, link: "/"},
+    {name: "contacts", ico: ContactIco, link: "/"}
 ]

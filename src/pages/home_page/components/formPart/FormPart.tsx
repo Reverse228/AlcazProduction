@@ -1,10 +1,14 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import Form from '../../../../components/form/Form'
+import "./style/style.css"
 
 const FormPart = () => {
+    const { t } = useTranslation()
+
     return <div id='formPart'>
-        <p id='formDesc'>Indeplinirea acestui formular, dupa contactare, iti va crea o noua pagina a carierei sau a evenimetelor ce ai dori memorate     cu ajutorul serviciilor Alcaz Production</p>
-        <Form/>
+        <p id='formDesc'>{t("form.desc")}</p>
+        <Form />
     </div>
 }
 

@@ -28,7 +28,26 @@
         }
     },
 
+    "servicesPage": {
+        "photo": {
+            "name": "Fotosesie",
+            "title" : "O parte importanta al succesului in afacere consta in vizual.",
+            "desc" : "Servicii de fotografie ce presupun sedinde foto in studiou sau locatia alesa de tine. Produsul final se incadreaza perfect in cataloage, prezentari, brosuri, site-uri si alte printuri. "
+        },
+        "video": {
+            "name": "Video",
+            "title" : "Te vor tine minte mult timp pentru a se reintoarce",
+            "desc" : "Servicii de productie video de produs, hoteliere, afaceri, impobiliare la un nivel inalt de calitate. Tehnica profesionala, editarea si montarea produsului de catre oameni ce isi cunosc si iubesc lucrul vor crea in ansamblu ceea de ce ai nevoie pentru a iti promova serviciile si produsele online"
+        },
+        "motionDesign": {
+            "name": "Motion design",
+            "title" : "Fii cu un picior in prezent si cu altul in viitor",
+            "desc" : "Servicii de motion design pentru cei ce experimenteaza si incearca mereu ceva nou in promovare. Animam sau dam viata la obiecte, forme, texte, elemente grafice cu ajutorul specialistilor nostri in acest domeniu - toate intr-un singur continut integru si impresionant"
+        }
+    },
+
     "form" : {
+        "desc" : "Indeplinirea acestui formular, dupa contactare, iti va crea o noua pagina a carierei sau a evenimetelor ce ai dori memorate cu ajutorul serviciilor Alcaz Production",
         "services" : {
             "choose": "Alege serviciul",
             "photo": "Fotosesie",
@@ -42,5 +61,9 @@
         "comment": "Comentariu",
         "socialMedia": "Va vom contacta",
         "btn": "Trimite" 
+    },
+
+    "footer" : {
+        "creator": "Site creat de YourAgensy"
     }
 }

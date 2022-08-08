@@ -12,7 +12,7 @@ const CustomTextArea = () => {
 
     return <div className={focused ? "commentPart acTextArea" : "commentPart"}>
     <p>{t("form.comment")}</p>
-    <textarea name="comment" cols={30} rows={10} onFocus={onFocus} onBlur={onBlur}></textarea>
+    <textarea name="comment" cols={30} rows={8} onFocus={onFocus} onBlur={onBlur}></textarea>
 </div>
 }
 

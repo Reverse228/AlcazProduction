@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import ArrowSendIco from '../../environment/svg/ArrowSendIco'
+import StandartBtn from '../standartBtn/StandartBtn'
 import { FormServices, SocialMedias } from './config'
 import CustomInput from './customInput/CustomInput'
 import CustomTextArea from './customTextArea/CustomTextArea'
@@ -15,7 +17,9 @@ const Form = () => {
     const [chooseSocialMediaIdx, setChooseSocialMediaIdx] = useState(0)
     const [chooseSocialMediaName, setChooseSocialMediaName] = useState("Telegram")
 
-    useEffect(() => { 
+    const [servicesChooseIdx, setServicesChooseIdx] = useState(0)
+
+    useEffect(() => {
         SocialMedias.map((socialMedia, idx) => {
             if (chooseSocialMediaIdx === idx) {
                 setChooseSocialMediaName(socialMedia.name)
@@ -30,7 +34,12 @@ const Form = () => {
             <p>{t("form.services.choose")}:</p>
             <div className='formServices'>
                 {FormServices.map((formService, idx: number) => {
-                    return <div className='formService' key={idx}>
+                    return <div
+                        className={servicesChooseIdx === idx ? "formService servicesAc" : "formService"}
+                        key={idx}
+                        onClick={() => {
+                            setServicesChooseIdx(idx)
+                        }}>
                         <p>{t(`${formService.name}`)}</p>
                         <formService.ico />
                     </div>
@@ -54,19 +63,17 @@ const Form = () => {
                 <div className='socialMediaChoose'>
                     <div className='chooseSocialText'>
                         <p>{t("form.socialMedia")}:</p>
-                        <p>{chooseSocialMediaName}</p>
+                        <p className='socialChoose'>{chooseSocialMediaName}</p>
                     </div>
                     <div className='socialMedias'>{SocialMedias.map((socialMedia, idx) => {
-                        return <div className='socialMedia' onClick={() => {
+                        return <div key={idx} className={chooseSocialMediaIdx === idx ? "socialMedia acSocial" : "socialMedia"} onClick={() => {
                             setChooseSocialMediaIdx(idx)
                         }}>
                             <socialMedia.ico key={idx} />
                         </div>
                     })}</div>
                 </div>
-                <div className='btnSendForm'>
-                    <p>{t("form.btn")}</p>
-                </div>
+                <StandartBtn text='form.btn'/>
             </div>
         </div>
     </div>

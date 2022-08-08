@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../../components/footer/Footer';
 import AboutPart from './components/aboutPart/AboutPart';
 import FormPart from './components/formPart/FormPart';
 import GalleryPart from './components/galleryPart/GalleryPart';
@@ -13,6 +14,7 @@ const HomePage = () => {
         <ServicesPart/>
         <GalleryPart/>
         <FormPart/>
+        <Footer/>
     </div>
 }
 

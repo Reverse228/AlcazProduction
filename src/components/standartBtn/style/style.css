@@ -183,4 +183,38 @@
   100% {
     transform: translateY(0);
   }
-}/*# sourceMappingURL=KeyFrames.css.map */
+}
+.standartBtn {
+  background: #3C9FDD;
+  width: 100%;
+  border-radius: 100px;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.standartBtn p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 0 10px;
+}
+.standartBtn svg {
+  transform: translateY(0);
+  margin: 0 10px;
+}
+.standartBtn:hover {
+  background: #46a7e3;
+}
+.standartBtn:hover svg {
+  -webkit-animation: hoverFormBtn;
+          animation: hoverFormBtn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}/*# sourceMappingURL=style.css.map */

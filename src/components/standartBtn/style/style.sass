@@ -1,0 +1,30 @@
+@import ../../../Style/MainStyle/MainStyle
+@import ../../../Style/MainStyle/KeyFrames
+
+.standartBtn
+                background: $blue
+                width: 100%
+                border-radius: 100px
+                padding: 15px
+                cursor: pointer
+                transition: 0.2s
+                color: white
+                @include flex(space-between, center, row)
+
+                p
+                    font-family: $josefinSans
+                    font-weight: bold
+                    font-size: 13px
+                    margin: 0 10px
+
+                svg
+                    transform: translateY(0)
+                    margin: 0 10px
+
+                &:hover
+                    background: $hoverBlue
+
+                    svg
+                        animation: hoverFormBtn
+                        animation-duration: 0.5s
+                        animation-iteration-count: 1

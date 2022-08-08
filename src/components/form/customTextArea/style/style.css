@@ -12,6 +12,7 @@
   font-size: 12px;
 }
 .commentPart textarea {
+  width: 250px;
   border: none;
   background: transparent;
   outline: none;

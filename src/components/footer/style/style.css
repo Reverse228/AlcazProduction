@@ -1,0 +1,22 @@
+#footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: none;
+}
+#footer #footerContent {
+  z-index: 100;
+  transform: translateY(-10px);
+}
+#footer #footerContent p {
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-size: 10px;
+  color: white;
+}
+#footer img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=style.css.map */
