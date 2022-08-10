@@ -6,6 +6,7 @@ import { ServicesContent } from './serviceConfig'
 const ServicesPage = () => {
     const { t } = useTranslation()
 
+    
     return <div id='servicePage'>
         {ServicesContent.map((serviceContent, idx) => {
             return <ContentPart
@@ -13,6 +14,7 @@ const ServicesPage = () => {
                 title={t(serviceContent.title)}
                 desc={t(serviceContent.desc)}
                 img={serviceContent.img}
+                namePosition={idx}
                 key={idx}
             />
         })}
