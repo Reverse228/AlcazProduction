@@ -4,13 +4,12 @@ import FooterBg from "../../environment/images/FooterBg.png"
 import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
-    const bg = useRef<HTMLImageElement>(null)
-    const bgHeight = bg.current?.offsetHeight
+    const bg = useRef<HTMLImageElement>(null) 
     const [contentHeight, setContentHeight] = useState(0)
 
     useEffect(() => {
-        setContentHeight(bgHeight !== undefined ? bgHeight : 0)
-    }, [bgHeight])
+        setContentHeight(bg.current?.offsetHeight !== undefined ? bg.current?.offsetHeight : 0)
+    }, [bg.current?.offsetHeight])
 
 
     const { t } = useTranslation()

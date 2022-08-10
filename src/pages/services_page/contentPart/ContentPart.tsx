@@ -22,7 +22,7 @@ const ContentPart: React.FC<Props> = ({ name, title, desc, img, btnLink, example
                 </div>
             </div>
             <div className='btnsPart'>
-                <StandartBtn text={"Trimite o cerere"}/>
+                <StandartBtn text={"servicesPage.btnText"}/>
                 <p className='exampleLink'>Exemple</p>
             </div>
         </div>

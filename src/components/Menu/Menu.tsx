@@ -14,7 +14,7 @@ const Menu = () => {
 
     return (<div id='menu'>
         <div id='menuContent' style={{
-          width: `1000px` 
+            width: `1000px` 
         }}>
             <img src={logo} alt="logo" />
             <div id='btns'>

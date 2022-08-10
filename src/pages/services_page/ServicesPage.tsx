@@ -7,12 +7,13 @@ const ServicesPage = () => {
     const { t } = useTranslation()
 
     return <div id='servicePage'>
-        {ServicesContent.map((serviceContent) => {
+        {ServicesContent.map((serviceContent, idx) => {
             return <ContentPart
                 name={t(serviceContent.name)}
                 title={t(serviceContent.title)}
                 desc={t(serviceContent.desc)}
-                img={t(serviceContent.img)}
+                img={serviceContent.img}
+                key={idx}
             />
         })}
     </div>
